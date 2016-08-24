@@ -5,4 +5,5 @@ class User < ApplicationRecord
                        format: { with: /.+@.+\..+/i }
   validates :password, presence: true
 
+  has_many :posts
 end
